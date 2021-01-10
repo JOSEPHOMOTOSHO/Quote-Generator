@@ -41,8 +41,44 @@ body {
 .quote-author {
   margin-top: 15px;
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 700;
   font-style: italic;
+}
+
+.button-container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: rgb(56, 56, 56);
+  cursor: pointer;
+  border: none;
+  height: 2.5rem;
+  padding: 0.5rem 1.8rem;
+  outline: 0;
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  box-shadow: 0 0.3rem rgba(56, 56, 56, 0.5);
+}
+
+button:hover {
+  filter: brightness(110%);
+}
+
+button:active {
+  transform: translateY(0.3rem);
+  box-shadow: none;
+}
+
+.twitter-button:hover {
+  color: #3eb1ff;
+}
+
+.fa-twitter {
+  font-size: 1.5rem;
 }
 
 /*Media Query for small and medium devices*/
