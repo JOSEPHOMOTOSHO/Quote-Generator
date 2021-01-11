@@ -5,10 +5,11 @@ const container = document.getElementById("container");
 const load = document.getElementById("loader");
 const twitterBtn = document.getElementById("twitter");
 
+//put off display on load
+container.style.display = "none";
+load.style.display = "block";
 //Get Quote
-
 async function getQuote(){
-    container.style.display = "none";
     loader()
     const proxyUrl = "https://whispering-tor-04671.herokuapp.com/"
     const apiurl = "http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json";
@@ -27,11 +28,8 @@ async function getQuote(){
     }
 }
 
-//put off display on funtion call
 function loader(){
-    container.style.display = "none";
-    load.style.display = "block";
-        //load and display after 2 seconds
+   //load and display after 2 seconds
     setTimeout(function(){
         container.style.display = "block";
         load.style.display = "none";
