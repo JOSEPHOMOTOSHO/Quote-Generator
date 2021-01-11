@@ -35,7 +35,7 @@ load.style.display = "block";
     setTimeout(function(){
         container.style.display = "block";
         load.style.display = "none";
-    },2500)
+    },3000)
 }
 
 
